@@ -4,7 +4,7 @@ pipeline {
         stage("Code") {
             steps {
                 echo "Cloning the code"
-                git url: "https://github.com/GauriKothekarnetsmartz/Django-cicd.git", branch: "master"
+                git url: "https://github.com/GauriKothekarnetsmartz/Django-cicd.git", branch: "dev"
             }
         }
         stage("Build") {
