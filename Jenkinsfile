@@ -28,7 +28,13 @@ pipeline {
         stage("Deploy the container") {
             steps {
                 echo "Deploying the container"
-                sh "docker-compose down && docker-compose up -d"
+                script {
+                    // Stop and remove existing containers
+                    sh "docker-compose down"
+                    
+                    // Start the container in detached mode
+                    sh "docker-compose up -d"
+                }
             }
         }
     }
