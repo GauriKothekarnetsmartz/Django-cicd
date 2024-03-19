@@ -89,10 +89,15 @@ WSGI_APPLICATION = 'FoodProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'myprojectdb1',
+        'USER': 'root',
+        'PASSWORD': 'Gaurik15#',
+        'HOST': 'localhost',  # Or your MySQL host IP
+        'PORT': '3306',       # MySQL default port
     }
 }
+
 
 
 # Password validation
