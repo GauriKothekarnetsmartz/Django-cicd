@@ -31,8 +31,9 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 import os
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost', '*']
 
-ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOSTS', '127.0.0.1' , '0.0.0.0')]
+
 
 
 
