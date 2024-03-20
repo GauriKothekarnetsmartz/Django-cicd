@@ -7,7 +7,7 @@ ENV PYTHONUNBUFFERED 1
 
 WORKDIR /app
 
-RUN git clone https://github.com/CosmiX-6/FoodPlaza.git .
+RUN https://github.com/GauriKothekarnetsmartz/Django-cicd.git .
 
 COPY ./requirements.txt /app/requirements.txt
 
